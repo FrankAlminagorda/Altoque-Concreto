@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Altoque Concreto | Cercos Prefabricados de Concreto</title>
+
+  <meta name="description"
+        content="Cercos prefabricados de concreto. Solicita una cotización para tu proyecto con Altoque Concreto.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #161616;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #e2b13c;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #e2b13c;
+    }
+
+    .hero {
+      min-height: 82vh;
+      background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)),
+        linear-gradient(135deg, #555, #181818);
+
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 70px 9%;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .hero small {
+      color: #e2b13c;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.05;
+      margin: 15px 0 22px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #ddd;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e2b13c;
+      color: #111;
+      text-decoration: none;
+      padding: 15px 27px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    section {
+      padding: 80px 9%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    .services {
+      background: #f4f4f4;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 7px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.07);
+    }
+
+    .card-number {
+      color: #e2b13c;
+      font-size: 34px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .process {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .step-number {
+      width: 55px;
+      height: 55px;
+      background: #161616;
+      color: #e2b13c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .quote {
+      background: #171717;
+      color: white;
+      text-align: center;
+    }
+
+    .quote h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .quote p {
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    footer {
+      background: #0c0c0c;
+      color: #999;
+      padding: 35px 9%;
+      text-align: center;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 29px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.3);
+      z-index: 20;
+    }
+
+    @media(max-width: 800px) {
+
+      nav {
+        display: none;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+    }
+
+    @media(max-width: 500px) {
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+
+      .hero {
+        padding: 60px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    ALTOQUE <span>CONCRETO</span>
+  </div>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Cómo trabajamos</a>
+    <a href="#cotizar">Cotizar</a>
+  </nav>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <small>Cercos prefabricados de concreto</small>
+
+    <h1>
+      Delimitamos tu terreno con soluciones en concreto
+    </h1>
+
+    <p>
+      Cercos prefabricados resistentes para terrenos, viviendas,
+      almacenes y proyectos. Evaluamos las características de tu
+      proyecto para ofrecerte una cotización adecuada.
+    </p>
+
+    <a class="btn btn-whatsapp"
+       href="https://wa.me/51934261254?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Altoque%20Concreto.%20Quisiera%20solicitar%20una%20cotizaci%C3%B3n."
+       target="_blank">
+       Solicitar cotización
+    </a>
+
+    <a class="btn" href="#servicios">
+      Conocer más
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="services" id="servicios">
+
+  <div class="section-title">
+
+    <h2>Nuestros servicios</h2>
+
+    <p>
+      Soluciones de concreto adaptadas a las características de cada proyecto.
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="card-number">01</div>
+
+      <h3>Cercos prefabricados</h3>
+
+      <p>
+        Sistemas de placas y postes de concreto para el cerramiento
+        perimétrico de terrenos y propiedades.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-number">02</div>
+
+      <h3>Instalación</h3>
+
+      <p>
+        Instalación de cercos considerando las condiciones,
+        dimensiones y características del lugar.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-number">03</div>
+
+      <h3>Cotización personalizada</h3>
+
+      <p>
+        Evaluamos ubicación, cantidad requerida y condiciones
+        del proyecto antes de preparar una propuesta.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="proceso">
+
+  <div class="section-title">
+
+    <h2>¿Cómo trabajamos?</h2>
+
+    <p>
+      Un proceso sencillo desde tu consulta hasta la instalación.
+    </p>
+
+  </div>
+
+  <div class="process">
+
+    <div class="steps">
+
+      <div>
+        <div class="step-number">1</div>
+        <h3>Consulta</h3>
+        <p>Cuéntanos qué necesitas y dónde se encuentra el proyecto.</p>
+      </div>
+
+      <div>
+        <div class="step-number">2</div>
+        <h3>Evaluación</h3>
+        <p>Revisamos las características y requerimientos del lugar.</p>
+      </div>
+
+      <div>
+        <div class="step-number">3</div>
+        <h3>Cotización</h3>
+        <p>Preparamos una propuesta de acuerdo con tu proyecto.</p>
+      </div>
+
+      <div>
+        <div class="step-number">4</div>
+        <h3>Instalación</h3>
+        <p>Coordinamos la ejecución e instalación del cerco.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="quote" id="cotizar">
+
+  <h2>¿Necesitas cercar tu terreno?</h2>
+
+  <p>
+    Escríbenos por WhatsApp e indícanos la ubicación del proyecto
+    y aproximadamente cuántos metros necesitas cercar.
+  </p>
+
+  <a class="btn btn-whatsapp"
+     href="https://wa.me/51934261254?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Altoque%20Concreto.%20Quisiera%20solicitar%20una%20cotizaci%C3%B3n."
+     target="_blank">
+
+     Cotizar por WhatsApp
+
+  </a>
+
+</section>
+
+
+<footer>
+
+  <strong>ALTOQUE CONCRETO</strong>
+
+  <p>
+    Cercos prefabricados de concreto
+  </p>
+
+  <p>
+    © 2026 Altoque Concreto
+  </p>
+
+</footer>
+
+
+<a class="floating-whatsapp"
+   href="https://wa.me/51934261254?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Altoque%20Concreto.%20Quisiera%20solicitar%20una%20cotizaci%C3%B3n."
+   target="_blank"
+   aria-label="Contactar por WhatsApp">
+
+   ☎
+
+</a>
+
+</body>
+</html>
